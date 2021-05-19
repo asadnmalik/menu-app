@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body onload="loadAll()">
+
+    <!--Heading-->
+    <div class="heading mx-auto" style="width: 200px;">
+        <h1>Our menu</h1>
+    </div>
+
+    <!--Buttons for Filtering-->
+    <div class="categories d-flex justify-content-center my-5" >
+        <button type="button" class="btn btn-warning m-1">All</button>
+        <button type="button" class="btn btn-warning m-1">Breakfast</button>
+        <button type="button" class="btn btn-warning m-1">Lunch</button>
+        <button type="button" class="btn btn-warning m-1">Shakes</button>
+        <button type="button" class="btn btn-warning m-1">Dinner</button>
+    </div>
+
+
+    <!--Menu Container-->
+    <div class="container">
+
+        <!--Menu Section-->
+        <div class="menu-section row row-cols-2">
+
+            <!--Menu-->
+            <!-- <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/karahi.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">Chicken Karahi <span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/mutton.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">Mutton<span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/daalchawal.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">Daal Chawal<span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/pakoray.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">Aloo Pakoray<span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/fries.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">French Fries<span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/maragarita.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">Mint Margarita <span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/lassi.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">Lassi<span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/paratha.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">Ommelette Paratha<span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/poori.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">Chana Poori Halwa<span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div>
+
+
+            <div class="menu d-flex col">
+                <div class="menu-image mx-3" >
+                    <img src="/imgs/karahi.jpg"  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
+                </div>
+                <div class="menu-info">
+                    <h5 class="menu-heading d-flex justify-content-between">karahi <span class="menu-price">14</span></h5>
+                    
+                    <p class="menu-info" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa iure dolorem maiores, minus odio porro minima! Quidem, qui quia sunt dolores voluptate alias. Doloremque natus quidem facilis est nostrum iste!</p>
+                </div>
+            </div> -->
+
+
+
+            
+        
+            
+        </div>
+
+        
+
+    </div>
+    
+
+
+
+
+
+    <!--Scripts-->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* *{
+  outline: 1px solid red;
+} */
+
+
+
+
+.menu img{
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+
+.menu h5{
+    border-bottom: 2px dotted orange;
+}
