@@ -13,3 +13,37 @@
 .menu h5{
     border-bottom: 2px dotted orange;
 }
+
+
+
+
+
+
+@media(max-width: 992px) {
+
+  .menu{
+    display: block !important;
+  }
+
+  .menu-section{
+    display:flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction:column !important;
+  }
+} 
+
+
+@media(max-width: 458px) {
+
+  .categories{
+    display: block !important;
+  }
+
+  .menu-section{
+    display:flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction:column !important;
+  }
+}

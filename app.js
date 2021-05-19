@@ -96,7 +96,7 @@ const menu = [
 //Query Selectors
 const menuSection = document.querySelector(".menu-section")
 const category = document.querySelectorAll('.btn')
-
+console.log(category)
 
 
 //Category Functions
