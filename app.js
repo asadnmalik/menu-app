@@ -111,7 +111,7 @@ const loadAll = () =>{
                     <img src=${food.image}  class="rounded mx-auto d-block" style=" width: 200px; height: 200px; object-fit: cover;" alt="">
                 </div>
                 <div class="menu-info">
-                    <h5 class="menu-heading d-flex justify-content-between">${food.name}<span class="menu=price">${food.price}</span></h5>
+                    <h5 class="menu-heading d-flex justify-content-between">${food.name}<span class="menu-price">${food.price}</span></h5>
                     
                     <p class="menu-info" >${food.description}</p>
                 </div>
